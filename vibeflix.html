@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VebFlix</title>
+    <link rel="stylesheet" href="flix.css" />
+</head>
+
+<!-- HEADER WITH LOGO -->
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <span class="logo-icon"></span>
+            <span class="logo-text">Vibe<span class="logo-highlight">Flix</span></span>
+        </div>
+        <div class="header-tagline">Your Movie Hub</div>
+    </div>
+</header>
+
+<body>
+
+    <!-- PAGE 1: WHO'S WATCHING -->
+    <div id="page1">
+        <div class="who-box">
+            <h1>Who's Watching?</h1>
+            <div class="profiles">
+                <div class="profile" onclick="enterApp()">🙋 You</div>
+                <div class="profile" onclick="enterApp()">👤 Guest</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: MAIN HUB -->
+    <div id="page2" class="hidden">
+        <!-- Billboard -->
+        <div id="billboard" class="billboard"
+            style="background-image: url('https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg');">
+            <div class="bill-text">
+                <h2 id="billTitle">Spider-Man: No Way Home</h2>
+                <p id="billLogline">Peter Parker seeks Doctor Strange's help to make his identity secret again.</p>
+            </div>
+        </div>
+
+        <!-- MOVIE GRID - ALL 12 CARDS -->
+        <div id="movieGrid" class="grid">
+
+            <!-- Card 1 -->
+            <div class="movie-card" onclick="playTrailer(0)">
+                <img src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+                    alt="Spider-Man: No Way Home" />
+                <div class="card-info">
+                    <h4>Spider-Man: No Way Home</h4>
+                    <span class="genre-tag">Action</span>
+                    <div class="cast-text">Tom Holland, Zendaya, Benedict Cumberbatch</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(0)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="movie-card" onclick="playTrailer(1)">
+                <img src="https://image.tmdb.org/t/p/w500/wWba3TaojhK7NdycRhoQpsG0FaH.jpg" alt="Despicable Me 4" />
+                <div class="card-info">
+                    <h4>Despicable Me 4</h4>
+                    <span class="genre-tag">Animation</span>
+                    <div class="cast-text">Steve Carell, Kristen Wiig, Will Ferrell</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(1)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="movie-card" onclick="playTrailer(2)">
+                <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar" />
+                <div class="card-info">
+                    <h4>Interstellar</h4>
+                    <span class="genre-tag">Sci-Fi</span>
+                    <div class="cast-text">Matthew McConaughey, Anne Hathaway, Jessica Chastain</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(2)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="movie-card" onclick="playTrailer(3)">
+                <img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="The Dark Knight" />
+                <div class="card-info">
+                    <h4>The Dark Knight</h4>
+                    <span class="genre-tag">Action</span>
+                    <div class="cast-text">Christian Bale, Heath Ledger, Aaron Eckhart</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(3)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="movie-card" onclick="playTrailer(4)">
+                <img src="https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg" alt="Inception" />
+                <div class="card-info">
+                    <h4>Inception</h4>
+                    <span class="genre-tag">Sci-Fi</span>
+                    <div class="cast-text">Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(4)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="movie-card" onclick="playTrailer(5)">
+                <img src="https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" alt="The Matrix" />
+                <div class="card-info">
+                    <h4>The Matrix</h4>
+                    <span class="genre-tag">Action</span>
+                    <div class="cast-text">Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(5)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="movie-card" onclick="playTrailer(6)">
+                <img src="https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg" alt="Forrest Gump" />
+                <div class="card-info">
+                    <h4>Forrest Gump</h4>
+                    <span class="genre-tag">Drama</span>
+                    <div class="cast-text">Tom Hanks, Robin Wright, Gary Sinise</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(6)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="movie-card" onclick="playTrailer(7)">
+                <img src="https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg" alt="Pulp Fiction" />
+                <div class="card-info">
+                    <h4>Pulp Fiction</h4>
+                    <span class="genre-tag">Crime</span>
+                    <div class="cast-text">John Travolta, Samuel L. Jackson, Uma Thurman</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(7)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="movie-card" onclick="playTrailer(8)">
+                <img src="https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg"
+                    alt="The Shawshank Redemption" />
+                <div class="card-info">
+                    <h4>The Shawshank Redemption</h4>
+                    <span class="genre-tag">Drama</span>
+                    <div class="cast-text">Tim Robbins, Morgan Freeman, Bob Gunton</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(8)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="movie-card" onclick="playTrailer(9)">
+                <img src="https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="The Godfather" />
+                <div class="card-info">
+                    <h4>The Godfather</h4>
+                    <span class="genre-tag">Crime</span>
+                    <div class="cast-text">Marlon Brando, Al Pacino, James Caan</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(9)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="movie-card" onclick="playTrailer(10)">
+                <img src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg" alt="Fight Club" />
+                <div class="card-info">
+                    <h4>Fight Club</h4>
+                    <span class="genre-tag">Drama</span>
+                    <div class="cast-text">Brad Pitt, Edward Norton, Helena Bonham Carter</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(10)">▶ Watch
+                        Trailer</button>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="movie-card" onclick="playTrailer(11)">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.udObI7glNKsWSgP2c5cXCwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Obsession" />
+                <div class="card-info">
+                    <h4>Obsession</h4>
+                    <span class="genre-tag">Horror/Romance</span>
+                    <div class="cast-text">Inde Navarrette, Michael Johnston, Megan Lawless, Cooper Tomlinson</div>
+                    <button class="trailer-btn" onclick="event.stopPropagation(); playTrailer(11)">▶
+                        WatchTrailer</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- VIDEO PLAYER (with iframe for YouTube) -->
+        <div class="video-section">
+            <h3>🎬 Trailer Player</h3>
+            <div id="videoContainer">
+                <iframe id="videoPlayer" width="100%" height="400" src="" frameborder="0" allowfullscreen
+                    style="border-radius: 12px; background: #111;"></iframe>
+            </div>
+            <button id="closeVideoBtn" class="close-btn" onclick="closeTrailer()">✕ Close Trailer</button>
+        </div>
+
+    </div>
+
+    <script>
+        window.difyChatbotConfig = {
+            token: 'app-Ucf73hkI0x2Fik3y0rdbEh8v',  //
+            baseUrl: 'https://api.dify.ai/v1'
+        }
+    </script>
+    <script src="https://udify.app/embed.min.js"></script>
+
+    <script src="flix.js"></script>
+
+</body>
+
+</html>
