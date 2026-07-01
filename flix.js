@@ -14,14 +14,12 @@ var movies = [
     { title: "Obsession", poster: "https://tse2.mm.bing.net/th/id/OIP.udObI7glNKsWSgP2c5cXCwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3", trailer: "https://www.youtube.com/embed/gMC8kkwbIQQ?si=yPiCZeCsh2-wY0WR",desc:"a music store employee named Bear who buys a novelty One Wish Willow to make his crush, Nikki, love him" }
 ];
 
-// PAGE SWITCH
 function enterApp() {
     document.getElementById('page1').classList.add('hidden');
     document.getElementById('page2').classList.remove('hidden');
     startBillboard();
 }
 
-// BILLBOARD
 var billIndex = 0;
 
 function updateBillboard(index) {
@@ -43,7 +41,7 @@ function startBillboard() {
 function playTrailer(index) {
     var movie = movies[index];
     var video = document.getElementById('videoPlayer');
-    video.src = movie.trailer + '?autoplay=1';  // Add autoplay
+    video.src = movie.trailer + '?autoplay=1';  
     document.getElementById('videoContainer').style.display = 'block';
 }
 
@@ -55,4 +53,3 @@ function closeTrailer() {
     container.style.display = 'none';
   }
 }
-
