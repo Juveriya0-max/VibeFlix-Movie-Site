@@ -132,7 +132,7 @@ body {
 }
 .profile:hover { background: #333; }
 
-/* PAGE 2 - Billboard (TALL) */
+/* PAGE 2 */
 .billboard {
   background: #1a1a1a;
   min-height: 500px;
@@ -153,7 +153,6 @@ body {
   padding: 24px 32px;
   border-radius: 16px;
   max-width: 550px;
-  backdrop-filter: blur(4px);
   border-left: 4px solid #e50914;
 }
 #billTitle { 
@@ -166,21 +165,6 @@ body {
   line-height: 1.5;
 }
 
-#page1 .dify-chatbot-container,
-#page1 .dify-chatbot-container * {
-  display: none !important;
-}
-
-.top-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 16px 0 24px;
-  gap: 12px;
-}
-
-/* Grid */
 .grid {
   display: flex;
   flex-wrap: wrap;
