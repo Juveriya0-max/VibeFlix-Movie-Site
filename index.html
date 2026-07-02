@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VibeFlix</title>
+    <title>VebFlix</title>
     <link rel="stylesheet" href="flix.css" />
 </head>
 
-<!-- HEADER-->
+<!-- HEADER WITH LOGO -->
 <header class="main-header">
     <div class="header-container">
         <div class="logo">
@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <!-- MOVIE 12 CARDS -->
+        <!-- MOVIE GRID - ALL 12 CARDS -->
         <div id="movieGrid" class="grid">
 
             <!-- Card 1 -->
@@ -195,6 +195,7 @@
 
         </div>
 
+        <!-- VIDEO PLAYER (with iframe for YouTube) -->
         <div class="video-section">
             <h3>🎬 Trailer Player</h3>
             <div id="videoContainer">
@@ -206,13 +207,9 @@
 
     </div>
 
-    <script>
-        window.difyChatbotConfig = {
-            token: 'app-Ucf73hkI0x2Fik3y0rdbEh8v',  //
-            baseUrl: 'https://api.dify.ai/v1'
-        }
-    </script>
-    <script src="https://udify.app/embed.min.js"></script>
+    <button onclick="window.open('https://udify.app/chatbot/L1nN2gLACC630JD1','_blank','width=420,height=600')"
+        style="position:fixed;bottom:20px;right:20px;background:#e50914;color:#fff;padding:16px 24px;border-radius:50px;border:none;font-weight:bold;cursor:pointer;z-index:9999;font-size:16px;">💬
+        Chat</button>
 
     <script src="flix.js"></script>
 
