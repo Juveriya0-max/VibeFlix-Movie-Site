@@ -1,4 +1,4 @@
-# VebFlix - Movie Hub
+# VibeFlix - Movie Hub
 
 ## Features
 - 🎬 12 Popular Movies
@@ -13,5 +13,3 @@
 - JavaScript
 - Dify AI
 
-## Live Demo
-https://Juveriya0-max.github.io/vebflix/
